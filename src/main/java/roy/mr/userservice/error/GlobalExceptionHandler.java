@@ -18,6 +18,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {Exception.class})
     protected ResponseEntity<Response> handleAllError(Exception ex, WebRequest request) {
+        ex.printStackTrace();
         return ResponseUtil.error(ex.getMessage());
     }
 }

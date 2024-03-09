@@ -39,7 +39,7 @@ public class UserController {
     }
 
     @DeleteMapping("/id/{id}")
-    public ResponseEntity<Response> updateUser(@PathVariable Long id) {
+    public ResponseEntity<Response> updateUser(@PathVariable Long id) throws DataNotFoundException {
         userService.delete(id);
         return ResponseUtil.success("user deletion successful with id " + id, null);
     }

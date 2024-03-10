@@ -33,7 +33,7 @@ Please set Java 21 bin in environment variable.
     --data-raw '{
         "id": 1,
         "firstName": "Shikhor",
-        "lastName": "Roy",
+        "lastName": "Roy 2",
         "email": "shikhor@gmail.com"
     }'
 
